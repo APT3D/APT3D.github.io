@@ -75,7 +75,7 @@
         <source src="./static/videos_compressed/0_teaser/All_Home.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video> -->
-      <img src="./static/images/teaser.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
+      <img src="./static/images/teaser_compressed.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
       Our <b>A</b>rchitect G<b>PT</b> (<b>APT</b>) pipeline efficiently and effectively generates a 3D house scene from text-based user input. Using a small language model, <b>APT</b> cuts generation time dramatically compared to LLM-based methods such as Holodeck (left vs. center). Also, <b>APT</b> integrates seamlessly with a real-time game environment on a consumer-grade GPU (right), demonstrating its praticality for real-time applications.
       <!-- <div style="margin: 1rem 0;"></div> -->
     </div>
@@ -201,7 +201,7 @@ function changeVideo(videoSrc, event) {
       <h1 class="title has-text-centered">
         Main Pipeline
       </h1>
-      <img src="./static/images/main_pipeline.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
+      <img src="./static/images/main_pipeline_compressed.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
       <div style="margin: 1rem 0;"></div>
       <div class="content", style="max-width: none; width: 100%;">
         <b>APT</b> has three main components: <b>(1)</b> <i>floor plan generation algorithm</i>, <b>(2)</b> <i>object selection and constraint using the designer agent</i>, <b>(3)</b> <i>3D asset retrieval and placement</i>. <b>APT</b> can generate its output as desired format that can be directly fed to real-world renderers, such as 3D simulation games.
@@ -220,7 +220,7 @@ function changeVideo(videoSrc, event) {
       </h1>
       <div style="margin: 2rem 0;"></div>
       <!-- <p class="title is-4 has-text-centered">Inner Prompt:</p> -->
-      <img src="./static/images/fig_comp_holo_compress.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
+      <img src="./static/images/fig_comp_holo_compressd.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
       Qualitative comparison between Holodeck and APT. Our baseline Holodeck often suffers from unrealistic floor plans (e.g. empty spaces at the center, overly narrow rooms, and unrealistic room connections) as well as inaccurate object retrieval, resulting in outputs that deviate from real-world houses. In contrast, our model generates more realistic house by producing human-agnostic floor plans and appropriately placed objects.
       <div style="margin: 2rem 0;"></div>
     </div>
@@ -236,7 +236,7 @@ function changeVideo(videoSrc, event) {
       </h1>
       <div style="margin: 2rem 0;"></div>
       <!-- <p class="title is-4 has-text-centered">Inner Prompt:</p> -->
-      <img src="./static/images/ablation_slm.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
+      <img src="./static/images/ablation_slm_compressed.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
       Qualitative comparison of house generation results from user preferences across multiple language models in <b>APT</b> pipeline. Despite being the smallest model, our finetuned Qwen-2.5 0.5B in <b>APT</b> achieves prompt-following performance comparable to the teacher model GPT-4o. Green boxes indicate correctly placed objects that match the user prompt, while red boxes denote incorrect, missing, or irrelevant objects.
       <div style="margin: 2rem 0;"></div>
     </div>
@@ -252,7 +252,7 @@ function changeVideo(videoSrc, event) {
       </h1>
       <div style="margin: 2rem 0;"></div>
       <!-- <p class="title is-4 has-text-centered">Inner Prompt:</p> -->
-      <img src="./static/images/ablation_prompt.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
+      <img src="./static/images/ablation_prompt_compressed.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
       Qualitative examples of generated scenes by APT with and without user preference, showing the capability of APT in following the diverse user prompts. 
     </div>
   </div>
@@ -267,7 +267,7 @@ function changeVideo(videoSrc, event) {
       </h1>
       <div style="margin: 2rem 0;"></div>
       <!-- <p class="title is-4 has-text-centered">Inner Prompt:</p> -->
-      <img src="./static/images/ablation_ft2.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
+      <img src="./static/images/ablation_ft2_compressed.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
       Qualitative comparison between our finetuned model (APT) and the base Qwen-2.5 0.5B model across a diverse set of user prompts. Our model consistently demonstrates more accurate object selection and placement aligned with user instructions, such as correctly placing a treadmill in an office, a kidbed in the bedroom, or both a bathtub and a shower booth in a bathroom.
     </div>
   </div>
@@ -282,7 +282,7 @@ function changeVideo(videoSrc, event) {
       </h1>
       <div style="margin: 2rem 0;"></div>
       <!-- <p class="title is-4 has-text-centered">Inner Prompt:</p> -->
-      <img src="./static/images/ablation_categorization.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
+      <img src="./static/images/ablation_categorization_compressed.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
       Ablation study on LLM-based asset categorization with APT-generated rooms. Without categorization (left), object retrieval is less accurate, resulting in semantically mismatched placements. Incorporating asset categories (right) significantly improves retrieval accuracy.
     </div>
   </div>
