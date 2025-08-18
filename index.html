@@ -6,7 +6,7 @@
         content="APT:">
   <meta name="keywords" content="T2M4LVO">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>APT: Architect GPT for Real-Time Language Guided 3D House Generation Using a Small Language Model</title>
+  <title>APT: Accelerating Pipeline for Text-Guided 3D Indoor Scene Generation</title>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
@@ -56,7 +56,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">APT: Architect GPT for Real-Time Language Guided 3D House Generation Using a Small Language Model</h1>
+          <h1 class="title is-1 publication-title">APT: Accelerating Pipeline for Text-Guided 3D Indoor Scene Generation</h1>
           <div class="is-size-3 publication-authors">
             <span class="author-block">Anonymous Authors</span>
           </div>
@@ -76,7 +76,7 @@
         Your browser does not support the video tag.
       </video> -->
       <img src="./static/images/teaser_compressed.png" alt="teaser" style="width: 100%; height: 100%; max-height: 100%; object-fit: cover;">
-      Our <b>A</b>rchitect G<b>PT</b> (<b>APT</b>) pipeline efficiently and effectively generates a 3D house scene from text-based user input. Using a small language model, <b>APT</b> cuts generation time dramatically compared to LLM-based methods such as Holodeck (left vs. center). Also, <b>APT</b> integrates seamlessly with a real-time game environment on a consumer-grade GPU (right), demonstrating its praticality for real-time applications.
+      Our pipeline, named APT, efficiently and effectively generates a 3D house scene from text-based user input. Using a small language model, <b>APT</b> cuts generation time dramatically compared to LLM-based methods such as Holodeck (left vs. center). Also, <b>APT</b> integrates seamlessly with a real-time game environment on a consumer-grade GPU (right), demonstrating its praticality for real-time applications.
       <!-- <div style="margin: 1rem 0;"></div> -->
     </div>
   </div>
@@ -88,8 +88,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            Generating 3D houses from text has relied on resource-intensive large language models (LLMs), limiting real-time game deployment. This paper introduces Architect GPT (<b>APT</b>), a novel real-time text-to-house framework utilizing a small language model (sLM). <b>APT</b> features a modular pipeline with robust floor plan generation, sLM-based asset placement planning, and efficient asset retrieval and placement. We effectively transfer LLM spatial reasoning to sLMs by finetuning with high-quality synthetic data and by progressively transferring these capabilities to the smallest models through knowledge distillation. Our experimental results show that <b>APT</b> generates 3D houses ~20 times faster than LLM-based baselines, achieving comparable quality. Integrated directly into game environments on consumer GPUs, <b>APT</b> proves highly practical for real-time applications.
+          <p>  With the advancement of large language models (LLMs), text-to-3D house generation has increasingly adopted LLM-based approaches. However, these methods are resource-intensive in terms of both time and hardware, making them expensive for real-time applications, such as game environments. To alleviate this, we propose \textbf{A}ccelerating \textbf{P}ipeline for \textbf{T}ext-guided 3D indoor scene generation (APT) with three stages: floor plan generation algorithm, scene planning with small Language Model (sLM) designer agent, and efficient asset retrieval and placement approach. Our experimental results show that our method generates a 3D house over 10 times faster than LLM baseline while achieving comparable quality. We also integrated our pipeline into the game environment on consumer-grade GPUs to demonstrate its practicality for real-time applications. 
           </p>
         </div>
       </div>
